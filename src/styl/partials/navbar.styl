@@ -18,10 +18,13 @@
 			font-size 72px
 			margin 4px 0px
 			color white
+			font-family 'FuturaStd-Medium'
 		}
 		.sub_head{
 			font-size 42px
 			margin-bottom 30px
+			font-family 'FuturaStd-Medium'
+			margin-top 18px
 		}
 		.read_more_btn{
 			background-color transparent
@@ -29,6 +32,7 @@
 			font-size 20px
 			border 4px solid white
 			border-radius 0px
+			font-family 'Montserrat-Regular'
 		}
 		.read_more_btn:hover{
 			background-color $orange
@@ -37,6 +41,7 @@
 }
 .carousel-control{
 	width 0px !important
+	opacity 1
 
 	.glyphicon {
 		position relative
@@ -61,6 +66,7 @@
 }
 .nav_container {
 	width auto
+	font-family 'Montserrat-Regular'
 }
 
 /* navbar css */
@@ -98,7 +104,7 @@
 }
 
 /* mobile-responsive */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 769px){
 
 /* navbar css */
 	.navbar-toggle{
@@ -134,6 +140,126 @@
 				display block
 				padding 0px
 			}
+		}
+	}
+
+	/* slider css */
+	.carousel-control {
+		.glyphicon {
+			position relative
+			top 100px
+
+			.glyph_l {
+				width 32px
+				height 28px
+			}
+		}
+
+		.glyph_left {
+			left 0px
+		}
+
+		.glyph_right {
+			left -58px
+		}
+	}
+}
+
+@media only screen and (max-width: 468px){
+/* slider css */
+	.carousel-inner {
+		
+		.carousel-caption {
+			right 0
+			bottom 12px
+
+			.banner_text {
+				font-size 16px
+			}
+
+			.sub_head {
+				font-size 11px
+				margin 8px 0px
+			}
+
+			.read_more_btn {
+			    padding 6px
+			    font-size 9px
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 468px) and (max-width: 768px){
+	/* slider css */
+	.carousel-inner {
+		
+		.carousel-caption {
+			right 0
+			bottom 50px
+
+			.banner_text {
+				font-size 30px
+			}
+
+			.sub_head {
+				font-size 18px
+				margin 8px 0px
+			}
+
+			.read_more_btn {
+			    padding 6px
+			    font-size 13px
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+/* navbar css */
+.navbar{
+	 
+	 .navbar-header {
+		position relative
+		left 360px
+	}
+}
+/* slider css */
+	.carousel-inner {
+		
+		.carousel-caption {
+			right 0
+			bottom 50px
+
+			.banner_text {
+				font-size 40px
+			}
+
+			.sub_head {
+				font-size 25px
+				margin 8px 0px
+			}
+
+			.read_more_btn {
+			    padding 6px
+			    font-size 17px
+			}
+		}
+	}
+
+	.carousel-control {
+		
+		.glyphicon {
+			position relative
+			top 177px
+		}
+		
+		.glyph_left {
+			left 34px
+		}
+
+		.glyph_right {
+			left -116px
 		}
 	}
 }

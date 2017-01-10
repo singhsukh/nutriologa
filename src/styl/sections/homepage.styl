@@ -26,6 +26,7 @@ h1, h2, h4, p{
 		font-size 22px
 		color $lightGrey
 		line-height 24px
+		font-family 'FuturaStd-Medium'
 	}
 }
 
@@ -35,6 +36,7 @@ h1, h2, h4, p{
 }
 .tm_title{
 	margin-bottom 110px
+	font-family 'FuturaStd-Medium'
 }
 .thumbnail{
 	padding 32px 32px 0
@@ -58,6 +60,14 @@ h1, h2, h4, p{
 
 		.sub_caption {
 			font-size 18px
+			font-family 'FuturaStd-Book'
+			line-height 20px
+			margin-top 25px
+		}
+
+		.user_name{
+			font-family 'FuturaStd-Bold'
+			font-size 22px
 		}
 	}
 }
@@ -65,6 +75,14 @@ h1, h2, h4, p{
 /* section 3 css */
 .gallary{
 	padding 100px 0px 50px
+
+	.gallary_title{
+		font-family 'FuturaStd-Bold'
+	}
+
+	.sub_heading1{
+		font-family 'Colaborate-Regular'
+	}
 }
 .gallary_area{
 	margin-top 80px
@@ -72,6 +90,7 @@ h1, h2, h4, p{
 .more_btn{
 	text-align center
 	margin-top 80px
+	font-family 'Montserrat-Regular'
 }
 .btn-xl-more{
 	padding 24px 78px
@@ -102,9 +121,12 @@ h1, h2, h4, p{
 }
 .blog_title {
 	margin-top 120px
+	font-family 'FuturaStd-Bold'
 }
 .blog_caption{
 	margin-top 30px
+	font-family 'Colaborate-Medium'
+	font-size 22px
 }
 
 /* section 5 css */
@@ -112,15 +134,57 @@ h1, h2, h4, p{
 	background-image url('/img/bg-img/apple-bg-img.png')
 	background-size cover
 	/* background-position 0px -180px */
+
+	.pack_title{
+		font-family 'FuturaStd-Bold'
+	}
+
+	.sub_heading{
+		font-family 'Colaborate-Regular'
+	}
 }
 .package_btn {
 	margin-top 80px
 	float left
 	width 100%
 	text-align center
+	font-family 'Montserrat-Regular'
 }
 .btn-xl-more{
 	.package_session_btn{
 		font-size 22px
+	}
+}
+
+@media only screen and (max-width: 768px){
+	section, .gallary{
+		padding 50px 0px
+	}
+	
+	.text-center{
+		margin-bottom 50px
+	}
+	
+	h1{
+		font-size 26px
+	}
+
+	h3{
+		font-size 20px !important
+	}
+
+	.thumbnail{
+		margin-bottom 80px
+	}
+	.thumbnail:las-child{
+		margin-bottom 0px
+	}
+
+	.blog_title {
+		margin-top 40px
+	}
+	.bg-footer .form-control1 {
+		min-width 0px
+		max-width 100%
 	}
 }

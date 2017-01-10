@@ -27,9 +27,17 @@
 	.text_wg, .subscribe{
 		font-size 22px
 	}
+	.subscribe{
+		margin-right 20px
+		font-family 'Colaborate-Regular'
+	}
+	.text_wg{
+		font-family 'FuturaStd-Book'
+	}
 	.footer_caption{
 		font-size 16px
 		margin-top 30px
+		font-family 'Colaborate-Medium'
 	}
 	.footer_icon {
 		margin-left 20px
@@ -47,24 +55,30 @@
 	.form-control1 {
 		height 60px
 		padding 12px 57px
+		padding-left 30px
 		font-size 18px
 		border solid 0.5px white
 		border-radius 6px
+		min-width 331px
 	}
 	*::-webkit-input-placeholder {
 	   color $placeholder
+	   font-family 'FuturaStd-Book'
 	}
 
 	*:-moz-placeholder { /* Firefox 18- */
 	   color $placeholder
+	   font-family 'FuturaStd-Book'
 	}
 
 	*::-moz-placeholder {  /* Firefox 19+ */
 	   color $placeholder
+	   font-family 'FuturaStd-Book'
 	}
 
 	*:-ms-input-placeholder {  
 	   color $placeholder
+	   font-family 'FuturaStd-Book'
 	}
 }
 
@@ -86,6 +100,20 @@
 			}
 		}
 
+		.left_widget{
+			padding-bottom 60px
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+	.bg-footer{
+		padding 0px
+
+		.container.footer, .right_widget {
+			text-align center
+		}
+		
 		.left_widget{
 			padding-bottom 60px
 		}
