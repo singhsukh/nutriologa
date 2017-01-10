@@ -3,6 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
     {% block meta %}{% endblock %}
     {# <link rel="stylesheet" href="js/{{ projectName }}.libs.css"> #}
     <link rel="stylesheet" href="css/main.css">
@@ -17,6 +24,26 @@
       </main>
       {% include 'partials/footer.njk' %}
     </div>
+
+    <!--  hiding left & right indicators -->
+    <script >
+      var checkitem = function() {
+      var $this;
+      $this = $("#myCarousel");
+      if ($("#myCarousel .carousel-inner .item:first").hasClass("active")) {
+        $this.children(".left").hide();
+        $this.children(".right").show();
+      } else if ($("#myCarousel .carousel-inner .item:last").hasClass("active")) {
+        $this.children(".right").hide();
+        $this.children(".left").show();
+      } else {
+        $this.children(".carousel-control").show();
+      }
+      };
+      checkitem();
+      $("#myCarousel").on("slid.bs.carousel", "", checkitem);
+    </script>
+    
     {# <script src="js/{{ projectName }}.libs.js"></script> #}
     {# <script src="js/{{ projectName }}.js"></script> #}
   </body>

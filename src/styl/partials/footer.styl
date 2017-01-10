@@ -1,0 +1,93 @@
+/* ---footer--- */
+.bg-footer{
+	color white
+	background-color $orange
+	padding 100px 0
+	position relative
+
+	.footer_logo {
+		float left
+		width auto
+		position absolute
+		top -265px
+		bottom 0px
+	}
+	
+	.left_widget {
+		display inline-flex
+		padding 100px 0px
+	}
+	.right_widget {
+		padding 75px 0
+		text-align right
+	}
+	.text_wg, .footer_caption, .subscribe{
+		color white
+	}
+	.text_wg, .subscribe{
+		font-size 22px
+	}
+	.footer_caption{
+		font-size 16px
+		margin-top 30px
+	}
+	.footer_icon {
+		margin-left 20px
+	}
+	.wg_main {
+		text-align center
+	}
+	.footer_caption::before {
+		border-top 1px solid white
+		display block
+		content ''
+		width 120px
+		margin 0px auto 75px
+	}
+	.form-control1 {
+		height 60px
+		padding 12px 57px
+		font-size 18px
+		border solid 0.5px white
+		border-radius 6px
+	}
+	*::-webkit-input-placeholder {
+	   color $placeholder
+	}
+
+	*:-moz-placeholder { /* Firefox 18- */
+	   color $placeholder
+	}
+
+	*::-moz-placeholder {  /* Firefox 19+ */
+	   color $placeholder
+	}
+
+	*:-ms-input-placeholder {  
+	   color $placeholder
+	}
+}
+
+/* mobile-responsive */
+@media only screen and (max-width: 768px){
+	.bg-footer{
+		padding 0px
+
+		.container.footer, .right_widget {
+			text-align center
+		}
+		
+		.footer_logo {
+			position absolute
+			top -90px
+
+			.logo_img{
+				height 150px
+			}
+		}
+
+		.left_widget{
+			padding-bottom 60px
+		}
+	}
+}
